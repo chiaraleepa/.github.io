@@ -20,12 +20,13 @@
     .canva-embed {
       position: relative;
       width: 100%;
+      max-width: 800px;       /* limits width on large screens */
+      margin: 2em auto;       /* centers it */
       height: 0;
-      padding-top: 75%; /* adjust this % for Canva design height vs width */
+      padding-top: 50%;       /* reduces height to prevent huge zoomed-in look */
       overflow: hidden;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(63,69,81,0.16);
-      margin: 1.5em 0;
     }
 
     .canva-embed iframe {
@@ -46,10 +47,17 @@
     a:hover {
       text-decoration: underline;
     }
+
+    p {
+      max-width: 800px;
+      margin: 1em auto;
+    }
   </style>
 </head>
 <body>
- 
+  <h1>🎉 GitHub Pages Test Page 🎉</h1>
+  <p>If you can see this, your GitHub Pages is working!</p>
+
   <!-- Responsive Canva embed -->
   <div class="canva-embed">
     <iframe loading="lazy"

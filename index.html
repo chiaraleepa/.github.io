@@ -71,5 +71,251 @@
       Contact / Sign Up Form
     </a>
   </p>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chiara Lee | Executive Level Support</title>
+<meta name="description" content="Discreet, elite-level inbox and calendar management without the overheads.">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --primary: #0f172a;
+  --accent: #1f7a4c;
+  --light: #f8f8f8;
+  --max-width: 1100px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--primary);
+  background: white;
+  line-height: 1.7;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.hero {
+  background: var(--light);
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.checklist li::before {
+  content: "✔";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #000;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  padding: 30px;
+  background: var(--light);
+}
+
+.footer {
+  background: var(--primary);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.small {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  font-family: inherit;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+  section {
+    padding: 60px 20px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Executive level support,<br>without the overheads.</h1>
+    <p class="tagline">Personal · Reliable · Secure · Discreet · Efficient · Seamless</p>
+    <p><strong>Application-only. Limited availability. Personally reviewed.</strong></p>
+    <a href="#apply" class="btn">See if we’re a great fit</a>
+  </div>
+</section>
+
+<!-- WHO AM I -->
+<section>
+  <div class="container center">
+    <h2>Who am I?</h2>
+    <p><strong>My name is Chiara.</strong></p>
+    <p>I provide discreet, elite-level inbox and calendar management for busy professionals who want their time, focus, and mental space back — without hiring staff or managing contractors.</p>
+    <p>This is not your typical virtual assistant service.</p>
+    <p><strong>Your behind-the-scenes powerhouse & personal right-hand assistant.</strong></p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="light">
+  <div class="container center">
+    <h2>How it works</h2>
+    <p>Simple, seamless support in 3 steps.</p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>1. Tell me what you need</h3>
+        <p>I listen carefully to understand your priorities.</p>
+      </div>
+      <div class="card">
+        <h3>2. I take care of it</h3>
+        <p>Seamless, confidential support handled remotely.</p>
+      </div>
+      <div class="card">
+        <h3>3. You focus on what matters</h3>
+        <p>Gain time, clarity, and mental space.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY WORK WITH ME -->
+<section>
+  <div class="container">
+    <h2 class="center">Why work with me</h2>
+
+    <ul class="checklist">
+      <li>Absolute confidentiality</li>
+      <li>Legally trained, ethically bound</li>
+      <li>Secure, permission-based systems</li>
+      <li>Seamless workflow integration</li>
+      <li>Proactive, discreet executive support</li>
+      <li>Professional indemnity insurance</li>
+    </ul>
+  </div>
+</section>
+
+<!-- INVESTMENT -->
+<section class="hero">
+  <div class="container center">
+    <h2>Your Investment</h2>
+    <p><strong>Just $500 + GST per week</strong></p>
+    <p>Minimum 4 week engagement period.</p>
+    <a href="#apply" class="btn">Apply Now</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="apply">
+  <div class="container center">
+    <h2>Apply for Executive Support</h2>
+
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea rows="5" placeholder="Leave a message"></textarea>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<section class="footer">
+  <div class="container">
+    <h3>Chiara Lee</h3>
+    <p>Based on the Gold Coast, Australia<br>Working remotely Australia-wide</p>
+    <p class="small">© 2026 Chiara Lee. All rights reserved.</p>
+  </div>
+</section>
+
+</body>
+</html>
 </body>
 </html>

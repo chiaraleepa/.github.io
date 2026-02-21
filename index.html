@@ -144,38 +144,96 @@ section {
 
 /* HERO */
 
+/* ===== HERO ===== */
+
 .hero {
+  position: relative;
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-              url('hero.jpg') center/cover no-repeat;
+  background: url('hero.jpg') center center / cover no-repeat;
   display: flex;
-  align-items: center;
-  color: white;
-  text-align: center;
+  align-items: flex-end;
 }
 
-.hero-content {
-  max-width: 900px;
-  margin: auto;
-  animation: fadeUp 1.2s ease;
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(248, 240, 237, 0.75),
+    rgba(248, 240, 237, 0.75)
+  );
 }
 
-/* BUTTON */
+.hero-text {
+  position: relative;
+  padding: 0 0 120px 120px;
+  max-width: 800px;
+  color: #2b1b16;
+}
 
-.btn {
-  display: inline-block;
-  padding: 16px 40px;
-  background: var(--blush);
-  color: black;
-  text-decoration: none;
-  margin-top: 30px;
+.hero h1 {
+  font-family: 'NeueMontreal', sans-serif;
+  font-size: 64px;
   font-weight: 500;
-  transition: 0.3s ease;
+  margin: 0;
 }
 
-.btn:hover {
-  opacity: 0.85;
+.hero .script {
+  font-family: 'Madelyn', cursive;
+  font-size: 42px;
+  margin-top: 10px;
 }
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .hero-text {
+    padding: 0 20px 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero .script {
+    font-size: 28px;
+  }
+}
+
+  <section class="intro-section">
+  <div class="intro-container">
+
+    <div class="intro-text">
+      <h2>
+        Flexible, remote personal assistance<br>
+        and elite inbox & calendar management<br>
+        for executives, founders and creators<br>
+        who want reliable support —<br>
+        without the overheads.
+      </h2>
+
+      <ul class="intro-checklist">
+        <li>Personal</li>
+        <li>Reliable</li>
+        <li>Secure</li>
+        <li>Discreet</li>
+        <li>Efficient</li>
+        <li>Seamless</li>
+      </ul>
+
+      <a href="#apply" class="btn">See if we’re a great fit</a>
+
+      <p class="intro-sub">
+        Application-only. Limited availability.<br>
+        Personally reviewed.
+      </p>
+    </div>
+
+    <div class="intro-image">
+      <img src="chiara-standing.png" alt="Chiara Lee">
+    </div>
+
+  </div>
+</section>
 
 /* SOFT BACKGROUND SECTIONS */
 
